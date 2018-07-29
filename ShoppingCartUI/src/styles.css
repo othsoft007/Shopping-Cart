@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+.othSoftLogo{
+    text-shadow :rgb(91, 114, 179) 0px 0px 0px, rgb(98, 122, 191) 1px 1px 0px, rgb(104, 130, 204) 2px 2px 0px, rgb(111, 139, 217) 3px 3px 0px, rgb(117, 147, 230) 4px 4px 0px, rgb(124, 155, 242) 5px 5px 0px; 
+    font-size: 20px; 
+    color: rgb(255, 255, 255); 
+    height: 65px; width: 65px; 
+    line-height: 65px; 
+    border-radius: 35%; 
+    text-align: center; 
+    background-color: rgb(130, 163, 255);
+    font-family: 'Lobster';
+    padding-right: 4.25rem;
+}
+
+.othSoftLogo:hover{
+    color: deep-purple-text;
+}
