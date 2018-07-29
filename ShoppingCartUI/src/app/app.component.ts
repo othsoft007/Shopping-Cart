@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'the Shopping Cart';
+  menu = {
+    home: "Home",
+    about: "About Us",
+    produts: "Producs",
+    contact: "Contact"
+
+  }
+
+  public loading = true;
 }
