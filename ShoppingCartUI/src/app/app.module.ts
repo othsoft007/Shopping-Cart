@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap';
+import { NewproductsComponent } from './newproducts/newproducts.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    CarouselComponent
+    CarouselComponent,
+    NewproductsComponent
   ],
   imports: [
     BrowserModule,

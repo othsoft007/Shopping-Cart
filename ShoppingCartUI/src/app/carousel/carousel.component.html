@@ -1,11 +1,12 @@
 <carousel>
-  <slide>
-    <img src="http://placehold.it/1900x650" alt="first slide" style="display: block; width: 100%;">
-  </slide>
-  <slide>
-    <img src="http://placehold.it/1901x650" alt="second slide" style="display: block; width: 100%;">
-  </slide>
-  <slide>
-    <img src="http://placehold.it/1902x650" alt="third slide" style="display: block; width: 100%;">
-  </slide>
+    <div class="item" *ngFor="let oCarouselItem of oCarouselItems;let i = index">
+        <slide>
+            <img src="{{oCarouselItem.src}}" alt="first slide" style="display: block; width: 100%; height: 650px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </slide>
+    </div>
+
 </carousel>
