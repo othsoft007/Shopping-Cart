@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { NewproductsComponent } from './newproducts/newproducts.component';
+import { ProductsService } from './services/products.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -25,9 +27,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     CarouselModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
