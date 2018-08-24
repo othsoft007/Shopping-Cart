@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6">
+    <blockquote class="blockquote float-left bq-primary">
+      <h3 class="bq-title customBestTitle">Featured Products</h3>
+    </blockquote>
+  </div>
+  <div class="col-md-6">
+    <a class="btn btn-default float-right customAllProducts" routerLink="">All Products</a>
+  </div>
+</div>
+<div class="owl-carousel owl-theme" style="padding-bottom:16px">
+    <div class="item" *ngFor="let oProduct of oProducts;let i = index">
+      <div class="card" style="width: 12.9rem;">
+          <img style="height: 12rem;" class="card-img-top" src="{{oProduct.imageUrl}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{oProduct.name}}</h5>
+            <p class="card-text">{{oProduct.description}}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+    </div>
+</div>
