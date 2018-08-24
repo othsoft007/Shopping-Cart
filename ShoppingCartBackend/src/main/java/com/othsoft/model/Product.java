@@ -28,12 +28,13 @@ public class Product implements java.io.Serializable {
 	private Long supplierId;
 	private Integer purchases;
 	private Integer views;
+	private String imageUrl;
 
 	public Product() {
 	}
 
 	public Product(String code, String name, String brand, String description, BigDecimal unitPrice, Integer quantity,
-			Boolean isActive, Long categoryId, Long supplierId, Integer purchases, Integer views) {
+			Boolean isActive, Long categoryId, Long supplierId, Integer purchases, Integer views, String imageUrl) {
 		this.code = code;
 		this.name = name;
 		this.brand = brand;
@@ -45,6 +46,7 @@ public class Product implements java.io.Serializable {
 		this.supplierId = supplierId;
 		this.purchases = purchases;
 		this.views = views;
+		this.imageUrl = imageUrl;
 	}
 
 	@Id
@@ -158,4 +160,12 @@ public class Product implements java.io.Serializable {
 		this.views = views;
 	}
 
+	@Column(name = "imageUrl")
+	public String getImageUrl() {
+		return this.imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 }
