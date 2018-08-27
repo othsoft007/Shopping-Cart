@@ -44,3 +44,8 @@ body{background-color: #fff;}
   background: #505887;
 }
 
+/*shopping cart Icon*/
+.shopping-cartIcon{
+  color: white;
+  padding-top: 0.7rem;
+}

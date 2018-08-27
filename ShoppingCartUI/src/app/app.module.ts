@@ -8,6 +8,7 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { NewproductsComponent } from './newproducts/newproducts.component';
 import { ProductsService } from './services/products.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     BrowserModule,
     CarouselModule,
     HttpClientModule,
+    AngularFontAwesomeModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [ProductsService],

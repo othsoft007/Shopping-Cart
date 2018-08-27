@@ -14,7 +14,10 @@ export class AppComponent {
     contact: "Contact"
 
   }
-
+  count = 0;
+  openDialog(){
+    this.count = this.count +1;
+  }
   public loading = true;
 
   

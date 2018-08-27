@@ -19,8 +19,11 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">{{menu.contact}}</a>
                 </li>
+                <li class="nav-item shopping-cartIcon">
+                    <i (click)="openDialog()" class="fas fa-shopping-cart" >{{count}}</i>
+                </li>
             </ul>
-        </div>
+        </div> 
 </nav>
 
 <!-- Routed views go here -->
